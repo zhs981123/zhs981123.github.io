@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     <title>JavaScript个人主页</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -280,6 +280,7 @@
         let index = document.getElementById('index')
         let svg=document.getElementById('svg')
         let body=document.querySelector('body')
+        let head=document.querySelector('head')
         index.style.display = 'none';
         setTimeout(function () {
             svg.style.display='none'
@@ -287,6 +288,7 @@
             body.style.justifyContent='flex-start';
             body.style.alignContent='stretch';
             index.style.display='block';
+            head.innerHTML+='<meta name="viewport" content="width=device-width,initial-scale=1.0">'
         },3000)
     }
 </script>
