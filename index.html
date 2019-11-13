@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <title>Javascript</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        html,body{
+
+        html, body {
             height: 100%;
             background-color: black;
             overflow: hidden;
             text-align: center;
         }
-        #text{
+
+        #text {
             display: inline-block;
             font-size: 80px;
             font-weight: bold;
-            color: rgba(255,255,255,.3);
+            color: rgba(255, 255, 255, .3);
             -webkit-background-clip: text;
             background-repeat: no-repeat;
-            background-position:-190px 0 ;
-            background-image:linear-gradient(120deg,rgba(255,255,255,0) 50px,rgba(255,255,255,1)100px,rgba(255,255,255,0)150px);
+            background-position: -190px 0;
+            background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 50px, rgba(255, 255, 255, 1) 100px, rgba(255, 255, 255, 0) 150px);
         }
     </style>
 </head>
 <body>
 <div id="text">
     Javascript
+    <img src="timg.jpg">
 </div>
 <script>
-    window.onload=()=>{
-        let text=document.getElementById('text');
-        let num=-190
-        setInterval(()=>{
+    window.onload = () => {
+        let text = document.getElementById('text');
+        let num = -190
+        setInterval(() => {
             num++
-            if(num>=880){
-                num=-190
+            if (num >= 880) {
+                num = -190
             }
-            text.style.backgroundPosition=num+'px','0px'
-        },3)
+            text.style.backgroundPosition = num + 'px', '0px'
+        }, 3)
     }
 </script>
 </body>
